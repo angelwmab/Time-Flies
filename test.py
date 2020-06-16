@@ -2,10 +2,11 @@ import os
 import torch
 import argparse
 from PIL import Image
-from model import *
-from util.utils import *
-from util.dataloader import *
 from torchvision.utils import save_image
+
+from model import Encoder, Decoder1, Decoder2
+from util.utils import make_video, get_smooth_noise
+from util.dataloader import get_seg_mask, get_target_img, get_ref_video_test
 
 VID_DIR = './samples/reference_video_frames/'
 SEG_DIR = './samples/segmentations/'
@@ -16,11 +17,11 @@ TARGET_IMG_PATH = './samples/target.jpg'
 def get_args():
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--vid_dir',type=str,help='directory of reference video frames', default=VID_DIR)
-    parser.add_argument('--seg_dir',type=str,help='directory of segmentation maps', default=SEG_DIR)
-    parser.add_argument('--model_dir',type=str,help='directory of models', default=MODEL_DIR)
-    parser.add_argument('--save_dir',type=str,help='directory of results', default=SAVE_DIR)
-    parser.add_argument('--target_img_path',type=str,help='path to input target image', default=TARGET_IMG_PATH)
+    parser.add_argument('--vid_dir',type=str,help='directory of reference video frames',default=VID_DIR)
+    parser.add_argument('--seg_dir',type=str,help='directory of segmentation maps',default=SEG_DIR)
+    parser.add_argument('--model_dir',type=str,help='directory of models',default=MODEL_DIR)
+    parser.add_argument('--save_dir',type=str,help='directory of results',default=SAVE_DIR)
+    parser.add_argument('--target_img_path',type=str,help='path to input target image',default=TARGET_IMG_PATH)
     parser.add_argument('--gpu',type=int, default=0)
     parser.add_argument('--size',type=int, default=512)
 

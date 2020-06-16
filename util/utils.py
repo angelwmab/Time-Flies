@@ -5,6 +5,12 @@ import numpy as np
 import torch.nn as nn
 from natsort import natsorted
 
+def save_model(net, name):
+    state_dict = net.state_dict()
+    for key in state_dict.keys():
+        state_dict[key] = state_dict[key].to(torch.device('cpu'))
+    torch.save(state_dict, name)
+
 def make_video(target_img_pth, vid_dir, save_dir):
     gen_fileNames = os.listdir(save_dir)
     gen_fileNames = natsorted(gen_fileNames)

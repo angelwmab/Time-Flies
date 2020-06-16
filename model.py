@@ -432,9 +432,6 @@ class Decoder2(nn.Module):
         return res
 
     def forward(self, out, feature, content_mask, style_mask, noise=None):
-
-        # ratio=0.5
-
         if noise is not None:
             self.noise = noise.unsqueeze(0).unsqueeze(0)
 
