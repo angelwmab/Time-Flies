@@ -7,8 +7,8 @@ video from a single image and a reference video.
 Chia-Chi Cheng, Hung-Yu Chen, [Wei-Chen Chiu](https://walonchiu.github.io/)  
 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2020.  
 
-Please cite our paper if you find it useful for your research.
-'''
+Please cite our paper if you find it useful for your research.  
+```
 @InProceedings{Cheng_2020_CVPR,
 author = {Cheng, Chia-Chi and Chen, Hung-Yu and Chiu, Wei-Chen},
 title = {Time Flies: Animating a Still Image With Time-Lapse Video As Reference},
@@ -16,6 +16,6 @@ booktitle = {IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVP
 month = {June},
 year = {2020}
 }
-'''
+```
     
 You can download our pretrained models from [here](https://drive.google.com/open?id=1Jn_uE3U5aW8TAGcA_pEr79MaeDYiD5re).
