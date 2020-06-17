@@ -51,7 +51,7 @@ Then you can directly run the training code:
 ```
 python train.py
 ```
-If you want to train the model with your own dataset:
+Train the model with your own dataset:
 ```
 python train.py --vid_dir YOUR_REF_VID_DATASET
                 --seg_dir YOUR_SEGMENTATION_DIR
