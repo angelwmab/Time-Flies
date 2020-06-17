@@ -18,12 +18,15 @@ year = {2020}
 }
 ```
 
+## Example Results
+![img](https://github.com/angelwmab/Time-Flies/blob/master/figure/qualitative.png)
+
 ## Installation
 * This code was developed with Python 3.6.9 & Pytorch 1.0.0 & CUDA 10.1.
 * Other requirements: cv2, numpy, natsort
 * Clone this repo
 ```
-git clone https://github.com/angelwmab/Time-Flies-Animating-a-Still-Image-with-Time-Lapse-Video-as-Reference
+git clone https://github.com/angelwmab/Time-Flies.git
 cd Time-Flies-Animating-a-Still-Image-with-Time-Lapse-Video-as-Reference
 ```
 
