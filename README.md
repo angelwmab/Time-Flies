@@ -1,4 +1,4 @@
-# Time Flies: Animating a Still Image with Time Lapse Video as Reference (CVPR 2020 accepted) ![teaser](https://github.com/angelwmab/Time-Flies/blob/master/figure/teaser.gif)
+# Time Flies: Animating a Still Image with Time Lapse Video as Reference (CVPR 2020 accepted) <div align=right><img height="200" src="https://github.com/angelwmab/Time-Flies/blob/master/figure/teaser.gif"/></div>
 PyTorch implementaton of the following paper. In this paper, we propose a self-supervised end-to-end model to generate the timelapse
 video from a single image and a reference video.
 
