@@ -28,7 +28,7 @@ year = {2020}
 * Clone this repo
 ```
 git clone https://github.com/angelwmab/Time-Flies.git
-cd Time-Flies-Animating-a-Still-Image-with-Time-Lapse-Video-as-Reference
+cd Time-Flies
 ```
 
 ## Testing
